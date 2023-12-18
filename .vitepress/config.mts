@@ -7,7 +7,7 @@ const pkg = require('vitepress/package.json')
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-CN',
-  base: '/fund-stock-docs/', // 设置站点根路径
+  base: '/', // 设置站点根路径
   outDir: './docs', // 打包输出目录
   title: "FundStockDocs",
   description: "A FundStockProject Docs",
