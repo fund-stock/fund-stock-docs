@@ -19,9 +19,9 @@ pnpm create vite@latest
 ```
 :::
 
-::: tip 命名一个名称，我这里用的 fund-stock-project
+::: tip 命名一个名称，我这里用的 fund-stock
 ```js
-cd fund-stock-project
+cd fund-stock
 ```
 :::
 

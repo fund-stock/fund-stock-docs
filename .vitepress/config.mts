@@ -29,7 +29,7 @@ export default defineConfig({
     sidebar: sidebarGuide(),
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/iszmxw/fund-stock-project' }
+      { icon: 'github', link: 'https://github.com/fund-stock/fund-stock' }
     ],
 
     footer: {
@@ -52,7 +52,7 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {
           text: 'Changelog',
-          link: 'https://github.com/iszmxw/fund-stock-project/commits/main/'
+          link: 'https://github.com/fund-stock/fund-stock/commits/main/'
         }
       ]
     }
