@@ -1,0 +1,52 @@
+# 打包 fund-stock 文档
+name: CI自动化部署
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 清理缓存
+      run: rm -rf ${{ runner.workspace }}/actions/*
+
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: 使用 Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: 查看 npm 版本
+      run: npm --version
+
+    - name: 安装 pnpm
+      run: npm install -g pnpm@8.2.0
+
+    - name: 查看 pnpm 版本
+      run: pnpm --version
+
+    - name: 安装依赖
+      run: pnpm install
+
+    - name: 删除docs
+      run: rm -rf docs
+
+    - name: 创建文件夹
+      run: mkdir -p docs
+
+    - name: 打包
+      run: pnpm run build
+
+    - name: 部署
+      uses: JamesIves/github-pages-deploy-action@v4.5.0
+      with:
+        # 部署分支 gh-pages（GitHub Pages 读取的分支）
+        branch: gh-pages
+        # 需要部署的文件在 docs 目录下面，也就是我们使用 npm run build 生成的静态文件的位置
+        folder: docs

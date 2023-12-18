@@ -1,0 +1,19 @@
+{
+  "name": "docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vitepress": "1.0.0-rc.31"
+  },
+  "dependencies": {
+    "@types/node": "^20.10.4",
+    "vue-google-adsense": "^2.0.0",
+    "vue-script-xx": "^0.2.5"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "hash": "1e88f0bb",
+  "configHash": "b8035c10",
+  "lockfileHash": "71cd0060",
+  "browserHash": "00b2a87e",
+  "optimized": {
+    "vue": {
+      "src": "../../../node_modules/.pnpm/vue@3.3.11/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "165129e0",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../node_modules/.pnpm/@vue+devtools-api@6.5.1/node_modules/@vue/devtools-api/lib/esm/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "738084ee",
+      "needsInterop": false
+    },
+    "vue-google-adsense": {
+      "src": "../../../node_modules/.pnpm/vue-google-adsense@2.0.0_vue-scriptx@0.2.5_vue@3.3.11/node_modules/vue-google-adsense/dist/VueGoogleAdsense.esm.min.js",
+      "file": "vue-google-adsense.js",
+      "fileHash": "b0edb817",
+      "needsInterop": false
+    },
+    "vue-script-xx": {
+      "src": "../../../node_modules/.pnpm/vue-script-xx@0.2.5/node_modules/vue-script-xx/src/index.ts",
+      "file": "vue-script-xx.js",
+      "fileHash": "1c290fe6",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-LZTJCUY2": {
+      "file": "chunk-LZTJCUY2.js"
+    },
+    "chunk-F3FYYIAV": {
+      "file": "chunk-F3FYYIAV.js"
+    }
+  }
+}
